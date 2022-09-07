@@ -20,30 +20,55 @@ a:visited {
 }
 	
 nav {
-	margin-top: 5vh;
+	position: relative;
 	width: 50vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 80%;
+	height: 100%;
+	margin-top: -2vh;
 }
 
 .token {
-	margin: 1vh min(2vw, 300px) 1vh min(2vw, 300px);
-	height: 10vh;
-	max-width: 10vh;
-	transition:transform 0.25s ease;
+	height: 10em;
+	width: 10em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	margin: -5vh 2vw 0 2vw
 }
 
-.token img {
-	height: 10vh;
+.token .image-wrapper {
+	height: 128.5px;
+	width: 128.5px;
+	object-fit: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.token .image-wrapper img{
+	width: 128.5px;
+}
+
+.token .image-wrapper img {
+}
+
+.token .iframe-container{
+	width: 128.5px;
+}
+
+.token .iframe-container > iframe {
+	width: 128.5px;
+	height: 128.5px;
+	border: 0;
 }
 
 .token .description {
 	text-align: center;
 	padding: 1vh 0 0 0;
-	font-size: 2vh;
+	font-size: 2em;
 	opacity: 0;
 	transition-duration: 0.2s;
 }
@@ -99,6 +124,12 @@ nav {
 	margin-bottom: 1vh;
 }
 
+@media only screen and (max-height: 500px) {
+	#logo{
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	nav {
 		flex-direction: column;
@@ -106,18 +137,45 @@ nav {
 	}
 
 	.token{
-		min-height: 7vh;
-		min-width: 200px;
 		text-align: center;
-		margin: max(3vh, 30px) 2vw max(3vh, 30px) 2vw;
+		margin: 1.5vh;
 	}
 	
-	.token img{
-		min-height: 50px;
+	.token .image-wrapper{
+		height: 102.8px;
 	}
+	
+	.token .image-wrapper img {
+		width: 102.8px;
+	}
+	
+	.token .iframe-container{
+		max-width: 102.8px;
+		height: 102.8px;
+		
+	}
+
+	.token .iframe-container > iframe {
+		-ms-zoom: 0.8;
+        -moz-transform: scale(0.8);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.8);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.8);
+        -webkit-transform-origin: 0 0;
+	}
+	
+	.token .iframe-link {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	
 	
 	#logo{
-		min-height: 25px;
+		display: none;
 	}
 		
 	.token .description{
@@ -138,4 +196,7 @@ nav {
 		margin: 1vh 4vw 0 4vw;
 	}
 	
+	.about_box{
+		margin-bottom: 1vh;
+	}
 }

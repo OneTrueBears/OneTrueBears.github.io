@@ -3,26 +3,39 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
 		<link rel="stylesheet" href="css\nav_style.css">
+		<link rel="canonical" href="https://bjornarovstedal.com" />
 		<body>
 			<nav>
-				<a href="graphic_designs.html">
-					<div class="token">
-						<img src="images\icons\graphic_design.jpg"></img>
-						<div class="description">Graphic Design</div>		
-					</div>	
-				</a>
-				<a href="creative_coding.html">
-					<div class="token">
-						<img src="images\icons\creative_coding.jpg"></img>
-						<div class="description">Creative Coding</div>
-					</div>			
-				</a>
-				<a href="illustration.html">
-					<div class="token">
-						<img src="images\icons\Illustration_and_sketches_icon.jpg"></img>
-						<div class="description">Illustration</div>
-					</div>	
-				</a>
+			
+				<div class="token">
+					<a href="graphic_designs.html">
+					<div class="image-wrapper">
+						<img src="multiplex_sequence.jpg" onmouseenter="startScroll(this)" onmouseleave="stopScroll(this)"></img>
+					</div>
+					</a>
+					<div class="description">Graphic Design</div>		
+				</div>	
+				
+				<div class="token" onclick="replace()">
+					<a href="creative_coding.html">
+						<div class="iframe-container" >
+							<iframe id="creative-coding" src="creative_coding_blocks\main.html"></iframe>
+						</div>
+					</a>
+					<div class="description">Creative Coding</div>
+					
+				</div>
+			
+				
+				<div class="token">
+					<a href="illustration.html">
+					<div class="image-wrapper">
+						<img id="hover-gif" src="gifs\1.gif" onmouseenter="playGif(this)" onmouseleave="stopGif(this)"></img>	
+					</div>
+					</a>
+					<div class="description">Illustration</div>
+				</div>	
+				
 			</nav>
 			<div class="about_box">
 				<img src="images\logos\bo.png" id="logo"></img>
@@ -36,6 +49,7 @@
 					<a href="https://www.artstation.com/bostedal"><img id="artstation" src="images\logos\artstation.png"></a>
 				</div>
 			</div>
+			<script src="index_script.js"></script>
 		</body>
 	</head>
 </html>
