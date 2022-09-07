@@ -133,35 +133,36 @@ nav {
 @media only screen and (max-width: 600px) {
 	nav {
 		flex-direction: column;
-		margin-top: -5vh;
+		margin-top: -3vh;
 	}
 
 	.token{
 		text-align: center;
-		margin: 1.5vh;
+		margin: 1em;
+		padding: 0;
 	}
 	
 	.token .image-wrapper{
-		height: 102.8px;
+		height: 77.1px;
 	}
 	
 	.token .image-wrapper img {
-		width: 102.8px;
+		width: 77.1px;
 	}
 	
 	.token .iframe-container{
-		max-width: 102.8px;
-		height: 102.8px;
+		max-width: 77.1px;
+		height: 77.1px;
 		
 	}
 
 	.token .iframe-container > iframe {
-		-ms-zoom: 0.8;
-        -moz-transform: scale(0.8);
+		-ms-zoom: 0.6;
+        -moz-transform: scale(0.6);
         -moz-transform-origin: 0 0;
-        -o-transform: scale(0.8);
+        -o-transform: scale(0.6);
         -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.8);
+        -webkit-transform: scale(0.6);
         -webkit-transform-origin: 0 0;
 	}
 	
