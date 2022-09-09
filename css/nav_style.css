@@ -37,7 +37,8 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	cursor: pointer;
-	margin: -5vh 2vw 0 2vw
+	margin: -5vh 2vw 0 2vw;
+	scrolling: no;
 }
 
 .token .image-wrapper {
@@ -57,12 +58,21 @@ nav {
 
 .token .iframe-container{
 	width: 128.5px;
+	 -ms-overflow-style: none;
+	 -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+	scrolling: no;
+	overflow: hidden;
 }
 
 .token .iframe-container > iframe {
 	width: 128.5px;
 	height: 128.5px;
 	border: 0;
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+	scrolling: no;
+	overflow: hidden;
 }
 
 .token .description {
