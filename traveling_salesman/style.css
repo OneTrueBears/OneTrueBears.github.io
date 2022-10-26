@@ -1,0 +1,97 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: "SempioneGrotesk";
+	background-color:#121212;
+}
+
+#canvas{
+	display:inline;
+	margin:auto;
+	width:100%;
+	height:100%;
+	position:fixed;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.article {
+	opacity: 0;
+	-webkit-filter: opacity=0%;
+	display: none;
+	position: absolute;
+	left: 25vw;
+	right: 25vw;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1{
+	text-align: center;
+	font-family: "Passenger Serif";
+}
+
+h2{
+	text-align: center;
+	font-family: "Passenger Serif";
+}
+
+h3{
+	text-align: center;
+	font-family: "Passenger Serif";
+}
+
+p{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+b{
+	font-size: 1em;
+}
+
+i{
+	font-size: 1em;
+	text-align: center;
+}
+
+img{
+	height:40vh;
+	filter: invert(1);
+	padding: 2vh;
+}
+
+a {
+	text-align: center;
+}
+
+li{
+	font-size: 1em;
+	text-align:center;
+}
+
+.explainer{
+	text-align: center;
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 800px) {
+	.article{
+		left: 5vw;
+		right: 5vw;
+	}
+	
+	img{
+		max-width: 90vw;
+	}
+}
